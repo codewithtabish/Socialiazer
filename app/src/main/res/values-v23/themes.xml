@@ -1,9 +1,28 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
 
     <style name="Theme.Socializer" parent="Base.Theme.Socializer">
-        <!-- Transparent system bars for edge-to-edge. -->
-        <item name="android:navigationBarColor">@android:color/transparent</item>
-        <item name="android:statusBarColor">@android:color/transparent</item>
-        <item name="android:windowLightStatusBar">?attr/isLightTheme</item>
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryLight</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariantLight</item>
+        <item name="colorOnPrimary">@color/colorOnPrimaryLight</item>
+        <item name="colorSecondary">@color/colorSecondaryLight</item>
+        <item name="colorOnSecondary">@color/colorOnSecondaryLight</item>
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="android:textColor">@color/black</item>
+        <!-- Customize other attributes if needed -->
+        <item name="android:statusBarColor">@color/colorPrimaryLight</item>
+        <item name="android:windowLightStatusBar">false</item> <!-- Set text color to dark -->
+        <item name="colorOnBackground">@color/colorOnBackgroundLight</item>
+    </style>
+
+    <style name="TextAppearance.Socializer.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextAppearance.Socializer.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="TextAppearance.Socializer.gray" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:textColor">#3C3A3A</item>
     </style>
 </resources>

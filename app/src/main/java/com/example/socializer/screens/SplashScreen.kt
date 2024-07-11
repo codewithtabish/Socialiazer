@@ -43,6 +43,7 @@ class SplashScreen : AppCompatActivity() {
 
     private fun loadVariables() {
         startActivity(Intent(this,LoginActivity::class.java))
+        finish()
 //        mAuth = FirebaseAuth.getInstance()
 
         // Check if the user is logged in
