@@ -18,10 +18,7 @@
         <activity
             android:name=".screens.SignUpFollwerScreen"
             android:exported="false" />
-        <activity
-            android:name=".screens.SignUPFollowerScreen"
-            android:exported="false"
-            android:theme="@style/Theme.Socializer" />
+
         <activity
             android:name=".screens.LoginActivity"
             android:exported="false"
@@ -29,15 +26,17 @@
         <activity
             android:name=".screens.SplashScreen"
             android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            </intent-filter>gh
         </activity>
-        <activity
-            android:name=".MainActivity"
-            android:exported="true" />
 
         <meta-data
             android:name="preloaded_fonts"

@@ -65,6 +65,11 @@ dependencies {
     implementation ("androidx.swiperefreshlayout:swiperefreshlayout:1.2.0-alpha01")
     implementation ("com.facebook.shimmer:shimmer:0.5.0")
     implementation("com.squareup.picasso:picasso:2.8")
+    implementation("com.github.OMARIHAMZA:StoryView:1.0.2-alpha")
+    implementation ("com.github.ibrahimsn98:SmoothBottomBar:1.7.9")
+
+
+
 
 
 

@@ -10,6 +10,7 @@ import androidx.core.view.WindowInsetsCompat
 import com.airbnb.lottie.LottieAnimationView
 import com.example.socializer.MainActivity
 import com.example.socializer.R
+import com.google.firebase.auth.FirebaseAuth
 
 class SplashScreen : AppCompatActivity() {
 
@@ -44,18 +45,17 @@ class SplashScreen : AppCompatActivity() {
     private fun loadVariables() {
         startActivity(Intent(this,LoginActivity::class.java))
         finish()
-//        mAuth = FirebaseAuth.getInstance()
+     val   mAuth = FirebaseAuth.getInstance()
 
-        // Check if the user is logged in
-//        if (mAuth.currentUser == null) {
-//            // User is not logged in, navigate to LoginActivity
-//            val intent = Intent(this, LoginActivity::class.java)
-//            startActivity(intent)
-//            finish()
-//        } else {
-//            // User is logged in, navigate to MainActivity
-//            startActivity(Intent(this, MainActivity::class.java))
-//            finish()
-//        }
+        if (mAuth.currentUser == null) {
+            // User is not logged in, navigate to LoginActivity
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
+            finish()
+        } else {
+            // User is logged in, navigate to MainActivity
+            startActivity(Intent(this, MainActivity::class.java))
+            finish()
+        }
     }
 }
